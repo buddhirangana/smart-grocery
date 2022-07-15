@@ -1,0 +1,28 @@
+.pr-img {
+    background-color: #ecf3ff;
+    text-align: left;
+    padding: 20px;
+}
+
+.pr-img img {
+    max-width: 70%;
+}
+
+.content-bg {
+    padding: 20px;
+    background-color: #ecf3ff;
+    border-radius: 10px;
+    margin-left: 120px;
+    margin-right: 10px;
+}
+
+.button-bg {
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+.content-bg .form-group .form-label {
+    color: rgb(151, 151, 151);
+    padding-left: 5px;
+}

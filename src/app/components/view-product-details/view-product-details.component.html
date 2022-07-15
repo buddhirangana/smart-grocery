@@ -1,0 +1,118 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="text-end mt-3 mb-3"></div>
+
+    <div class="col-md-10 content-bg">
+      <div>
+        <h5 class="mb-3">{{ product.productName }}</h5>
+      </div>
+      <div>
+        <table>
+          <tr>
+            <td>
+              <div class="form-group">
+                <label class="form-label">Product Id:</label>
+              </div>
+            </td>
+            <td>
+              <span>{{ product.id }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group">
+                <label class="form-label">Name:</label>
+              </div>
+            </td>
+            <td>
+              <span>{{ product.productName }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group">
+                <label class="form-label">Description:</label>
+              </div>
+            </td>
+            <td>
+              <span>{{ product.description }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group">
+                <label class="form-label">Category:</label>
+              </div>
+            </td>
+            <td>
+              <span>{{ product.category }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group">
+                <label class="form-label">Brand:</label>
+              </div>
+            </td>
+            <td>
+              <span>{{ product.brand }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group">
+                <label class="form-label">Expire Date:</label>
+              </div>
+            </td>
+            <td>
+              <span>{{ product.expiredDate | date: "dd/MM/yyyy" }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group">
+                <label class="form-label">Manufactured Date:</label>
+              </div>
+            </td>
+            <td>
+              <span>{{ product.manufacturedDate | date: "dd/MM/yyyy" }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group">
+                <label class="form-label">Unit Price:</label>
+              </div>
+            </td>
+            <td>
+              <span>{{ product.unitPrice | currency: "Rs." }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group">
+                <label class="form-label">Quantity:</label>
+              </div>
+            </td>
+            <td>
+              <span>{{ product.quantity }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group">
+                <label class="form-label">Created Date:</label>
+              </div>
+            </td>
+            <td>
+              <span>{{ product.createdDate | date: "dd/MM/yyyy" }}</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-10 button-bg">
+      <a routerLink=""><button type="button" class="btn btn-outline-primary"><i class="fa fa-arrow-left"></i> Go Back</button></a>
+    </div>
+  </div>
+</div>
