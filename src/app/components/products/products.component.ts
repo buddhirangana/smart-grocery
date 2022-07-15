@@ -23,10 +23,6 @@ export class ProductsComponent implements OnInit {
     this.getProducts();
   }
 
-  ngAfterViewInit() {
-    this.message = this.viewComponent.childMessage;
-  }
-
   public products: Product[] = [];
 
   public selectProduct(selectedRow: number, product: Product) {
