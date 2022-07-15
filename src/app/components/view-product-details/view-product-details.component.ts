@@ -10,7 +10,6 @@ import { ProductService } from 'src/app/services/product.service';
 })
 
   export class ViewProductDetailsComponent implements OnInit {
-    childMessage: string = "message from child";
     public product!: Product;
     constructor(
       private productService: ProductService,
